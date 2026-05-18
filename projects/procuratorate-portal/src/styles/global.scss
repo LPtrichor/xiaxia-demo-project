@@ -1,0 +1,63 @@
+@import './reset.scss';
+@import './element-overrides.scss';
+
+// 页面容器
+.page-container {
+  max-width: $max-page-width;
+  margin: 0 auto;
+  padding: 0 $spacing-xl;
+}
+
+// 卡片通用 — 方正感
+.card {
+  background: $bg-white;
+  border-radius: $card-radius;
+  box-shadow: $shadow-sm;
+  padding: $spacing-lg;
+  border: 1px solid $border-light;
+  transition: box-shadow $transition-base, border-color $transition-base;
+
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+}
+
+// 区块标题 — 红色底线
+.section-title {
+  font-size: $font-size-lg;
+  font-weight: 700;
+  color: $primary-color;
+  padding-bottom: $spacing-sm;
+  margin-bottom: $spacing-md;
+  border-bottom: 2px solid $primary-color;
+  display: inline-block;
+  position: relative;
+}
+
+// 链接
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $primary-light;
+  }
+}
+
+// 文字省略
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 触摸点击反馈
+.tap-active {
+  cursor: pointer;
+  transition: opacity $transition-fast;
+
+  &:active {
+    opacity: 0.7;
+  }
+}

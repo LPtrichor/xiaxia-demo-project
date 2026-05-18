@@ -1,0 +1,121 @@
+// Element Plus 主题覆盖 — 政府机关风格
+
+// Button
+.el-button--primary {
+  background: $primary-color;
+  border-color: $primary-color;
+
+  &:hover {
+    background: $primary-light;
+    border-color: $primary-light;
+  }
+}
+
+.el-button--danger {
+  background: $accent-color;
+  border-color: $accent-color;
+}
+
+// Input
+.el-input__wrapper {
+  border-radius: $card-radius-sm;
+  box-shadow: none !important;
+  border: 1px solid $border-color;
+
+  &:hover {
+    border-color: $primary-light;
+  }
+
+  &.is-focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 2px rgba($primary-color, 0.1) !important;
+  }
+}
+
+// Table
+.el-table {
+  border-radius: $card-radius;
+
+  th.el-table__cell {
+    background: $bg-page;
+    color: $primary-color;
+    font-weight: 600;
+  }
+
+  tr:hover > td {
+    background: rgba($primary-color, 0.03) !important;
+  }
+}
+
+// Tabs
+.el-tabs__item {
+  font-weight: 500;
+
+  &.is-active {
+    color: $primary-color;
+  }
+}
+
+.el-tabs__active-bar {
+  background-color: $primary-color;
+}
+
+// Tag
+.el-tag {
+  border-radius: $card-radius-sm;
+  font-weight: 500;
+}
+
+// Pagination
+.el-pagination {
+  .el-pager li {
+    border-radius: $card-radius-sm;
+    font-weight: 500;
+
+    &.is-active {
+      background: $primary-color;
+      color: #fff;
+    }
+  }
+}
+
+// Dialog
+.el-dialog {
+  border-radius: $card-radius;
+
+  .el-dialog__header {
+    border-bottom: 2px solid $primary-color;
+    padding: $spacing-lg $spacing-xl;
+  }
+
+  .el-dialog__title {
+    font-weight: 600;
+    color: $primary-color;
+  }
+}
+
+// Dropdown
+.el-dropdown-menu {
+  border-radius: $card-radius;
+  box-shadow: $shadow-lg;
+}
+
+.el-dropdown-menu__item:hover {
+  background: rgba($primary-color, 0.06);
+  color: $primary-color;
+}
+
+// Carousel
+.el-carousel__arrow {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.el-carousel__indicators--outside button {
+  border-radius: 2px;
+}
+
+.el-carousel__indicators--outside .is-active button {
+  background: $primary-color;
+}
